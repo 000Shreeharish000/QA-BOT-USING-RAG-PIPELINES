@@ -1,0 +1,58 @@
+import json
+
+json_content = {
+    "FAQs": [
+        {"question": "What is Velotriz?", "answer": "Velotriz is an e-commerce software platform designed to help businesses create, manage, and optimize their online stores."},
+        {"question": "What features does Velotriz offer?", "answer": "Velotriz offers features such as customizable storefronts, payment gateway integration, order management, analytics, marketing tools, and multi-channel selling."},
+        {"question": "Who can use Velotriz?", "answer": "Velotriz is suitable for small, medium, and large businesses looking to establish or enhance their online presence."},
+        {"question": "Does Velotriz support multiple languages?", "answer": "Yes, Velotriz supports multiple languages to help businesses cater to a global audience."},
+        {"question": "What payment gateways does Velotriz integrate with?", "answer": "Velotriz integrates with popular payment gateways such as PayPal, Stripe, Square, and more."},
+        {"question": "How secure is Velotriz?", "answer": "Velotriz employs advanced security measures, including SSL encryption and PCI compliance, to ensure your store and customer data are secure."},
+        {"question": "What kind of analytics does Velotriz provide?", "answer": "Velotriz provides insights on sales performance, customer behavior, product trends, and more to help businesses make data-driven decisions."},
+        {"question": "Can I migrate my existing store to Velotriz?", "answer": "Yes, Velotriz offers migration tools and support to help you transfer your existing store data seamlessly."},
+        {"question": "Is there a free trial available?", "answer": "Yes, Velotriz offers a 14-day free trial to explore the platform's features."},
+        {"question": "How much does Velotriz cost?", "answer": "Velotriz offers various pricing plans to suit different business needs. Please visit our pricing page for detailed information."},
+        {"question": "Can I customize my store on Velotriz?", "answer": "Absolutely! Velotriz provides a wide range of templates and customization options to match your brand identity."},
+        {"question": "Does Velotriz support mobile-friendly designs?", "answer": "Yes, all Velotriz templates are responsive and optimized for mobile devices."},
+        {"question": "What support does Velotriz provide?", "answer": "Velotriz offers 24/7 customer support through email, chat, and phone, along with a comprehensive knowledge base."},
+        {"question": "Can I integrate Velotriz with other tools?", "answer": "Yes, Velotriz supports integration with various third-party tools, including CRM, ERP, and marketing platforms."},
+        {"question": "Does Velotriz support multi-channel selling?", "answer": "Yes, Velotriz allows you to sell across multiple platforms, including social media and marketplaces like Amazon and eBay."},
+        {"question": "How do I get started with Velotriz?", "answer": "You can sign up for a free trial on our website and follow the onboarding process to set up your store."},
+        {"question": "Can I manage inventory with Velotriz?", "answer": "Yes, Velotriz includes robust inventory management features to track stock levels, sales, and restocking."},
+        {"question": "Does Velotriz offer marketing tools?", "answer": "Yes, Velotriz provides built-in marketing tools such as email campaigns, SEO optimization, and discount management."},
+        {"question": "What industries does Velotriz cater to?", "answer": "Velotriz caters to a wide range of industries, including fashion, electronics, beauty, and more."},
+        {"question": "Is Velotriz suitable for beginners?", "answer": "Yes, Velotriz is user-friendly and provides a step-by-step setup process for beginners."},
+        {"question": "Does Velotriz provide SEO tools?", "answer": "Yes, Velotriz offers built-in SEO tools to help optimize your store for search engines and increase visibility."},
+        {"question": "Can I track customer behavior with Velotriz?", "answer": "Yes, Velotriz provides analytics tools that allow you to track customer behavior, including browsing patterns and purchase history."},
+        {"question": "Does Velotriz support discounts and promotions?", "answer": "Yes, Velotriz includes features to create and manage discounts, coupons, and special promotions."},
+        {"question": "Can I integrate social media with Velotriz?", "answer": "Yes, Velotriz allows you to connect your store with social media platforms for seamless sharing and selling."},
+        {"question": "What are the system requirements for using Velotriz?", "answer": "Velotriz is cloud-based and accessible through any modern web browser; no additional software installation is required."},
+        {"question": "How does Velotriz handle shipping?", "answer": "Velotriz integrates with major shipping carriers and offers tools to calculate shipping rates, print labels, and track shipments."},
+        {"question": "Can I create a blog on my Velotriz store?", "answer": "Yes, Velotriz includes a blogging feature to help you create and publish content for your audience."},
+        {"question": "Does Velotriz offer customer account management?", "answer": "Yes, Velotriz allows you to manage customer accounts, including order history and personalized experiences."},
+        {"question": "Can I set up tax rules with Velotriz?", "answer": "Yes, Velotriz provides tax management tools to set up rules based on location and other criteria."},
+        {"question": "Does Velotriz support subscriptions?", "answer": "Yes, Velotriz supports subscription-based products and recurring billing."},
+        {"question": "How do I contact Velotriz support?", "answer": "You can contact Velotriz support through email, live chat, or by phone. Our support team is available 24/7."},
+        {"question": "Can I preview changes to my store before publishing?", "answer": "Yes, Velotriz includes a preview feature that allows you to see changes before making them live."},
+        {"question": "What training materials does Velotriz provide?", "answer": "Velotriz offers tutorials, webinars, and a knowledge base to help users get the most out of the platform."},
+        {"question": "Can I collaborate with my team on Velotriz?", "answer": "Yes, Velotriz allows multiple user accounts with varying levels of permissions for team collaboration."},
+        {"question": "Does Velotriz support custom domains?", "answer": "Yes, you can connect your custom domain to your Velotriz store."},
+        {"question": "Can I accept international payments with Velotriz?", "answer": "Yes, Velotriz supports multiple currencies and international payment gateways."},
+        {"question": "What happens if I exceed my plan's limits?", "answer": "Velotriz will notify you if you approach your plan's limits, and you can easily upgrade to a higher tier."},
+        {"question": "Does Velotriz offer backup and recovery?", "answer": "Yes, Velotriz provides automatic backups and data recovery options."},
+        {"question": "How does Velotriz handle product returns?", "answer": "Velotriz offers tools to manage returns and refunds efficiently."},
+        {"question": "Can I use Velotriz for B2B e-commerce?", "answer": "Yes, Velotriz supports B2B features such as bulk pricing, custom quotes, and account management."},
+        {"question": "What is Velotriz's uptime guarantee?", "answer": "Velotriz guarantees 99.9% uptime to ensure your store is always accessible."},
+        {"question": "Does Velotriz support custom APIs?", "answer": "Yes, Velotriz provides APIs for developers to create custom integrations."},
+        {"question": "Can I schedule sales with Velotriz?", "answer": "Yes, Velotriz allows you to schedule sales and promotions in advance."},
+        {"question": "Does Velotriz have a mobile app?", "answer": "Yes, Velotriz offers a mobile app to manage your store on the go."},
+        {"question": "How often does Velotriz release updates?", "answer": "Velotriz regularly releases updates with new features and improvements."},
+        {"question": "Can I use Velotriz for a subscription box business?", "answer": "Yes, Velotriz supports subscription box models with recurring billing and shipping management."}
+    ]
+}
+
+# Saving the JSON content
+with open('documents.json', 'w') as file:
+    json.dump(json_content, file, indent=4)
+
+print("JSON file created successfully.")
