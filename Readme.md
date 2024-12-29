@@ -1,4 +1,4 @@
-A QA BOT for a software company named VeloTriz.
+A QA BOT for a software company named VeloTriz.\
 Uses RAG model (Retrievel-Augemented Generation)
 This can handle Questions related to the company and about the products they use.
 Since the OpenAI api is paid I have embedded a different model which is similar to OpenAI model.
